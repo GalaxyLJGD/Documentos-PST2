@@ -1,0 +1,32 @@
+Computadores del CBIT:
+
+Hardware (Servidor):
+* CPU: Intel Xenon CPU E3-1230 de 8 nucleos a 3,30 GHz
+* RAM 7,5 GiB
+* Espacio disponible: 494,1 GiB
+
+Sistema operativo:
+* Debian 8 de 64 Bits
+* Kernel Linux 3.16, 
+* Los computadores están conectados a un servidor central y funcionan como si
+  fueran terminales.
+
+Navegadores:
+* Firefox 60.8.0 ESR
+* Chrome 76.0.3809.100
+
+Servidor:
+* phpMyAdmin 4.2.12
+* PHP 5.6.40
+* Apache 2.4.10
+* MySQL 5.5.62
+* Python 3.4.2
+* Perl 5.20.2
+* Ruby 2.1.5
+* TCPDF 6.0.093
+* Bash 4.3.30
+
+Otros programas:
+* Evince (Visor de PDF): 3.14.1
+* LibreOffice 4.3.3.2
+* Adobe Flash Player, versión desconocida.
