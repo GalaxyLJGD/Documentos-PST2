@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Diccionario de Datos</title>
+  <style type="text/css">
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 2px 10px;
+    }
+  </style>
+</head>
+<body>
+<a name="Diccionario-de-datos"></a>
+<h1>Diccionario de datos</h1>
+
+<p>La base de datos se llama &ldquo;db_villas&rdquo;.</p>
+
+<p>Se debe usar el collation &ldquo;utf8mb4_spanish_ci&rdquo;.</p>
+
+<a name="Tabla-de-contenidos"></a>
+<h1>Tabla de contenidos</h1>
+
+<ul>
+<li><a href="#Maestras">Maestras</a>
+
+<ul>
+<li><a href="#Ano_escolar">Ano_escolar</a></li>
+<li><a href="#Documento">Documento</a></li>
+<li><a href="#Enfermedad">Enfermedad</a></li>
+<li><a href="#Escuela">Escuela</a></li>
+<li><a href="#Estado">Estado</a></li>
+<li><a href="#Grado">Grado</a></li>
+<li><a href="#Persona">Persona</a></li>
+<li><a href="#Seccion">Seccion</a></li>
+<li><a href="#Vacuna">Vacuna</a></li>
+</ul>
+</li>
+<li><a href="#Transacciones">Transacciones</a>
+
+<ul>
+<li><a href="#Doc_entregado">Doc_entregado</a></li>
+<li><a href="#Enf_padecida">Enf_padecida</a></li>
+<li><a href="#Referencia">Referencia</a></li>
+<li><a href="#Representante">Representante</a></li>
+<li><a href="#Usuario">Usuario</a></li>
+<li><a href="#Vac_recibida">Vac_recibida</a></li>
+</ul>
+</li>
+<li><a href="#Transacciones-de-la-inscripci-c3--b3-n">Transacciones de la inscripción</a>
+
+<ul>
+<li><a href="#Alumno">Alumno</a></li>
+<li><a href="#Inscripcion">Inscripcion</a></li>
+</ul>
+</li>
+</ul>
+
+
+<a name="Maestras"></a>
+<h2>Maestras</h2>
+
+<a name="Ano_escolar"></a>
+<h3>Ano_escolar</h3>
+
+<ul>
+<li><p>id_ano: ID del año escolar. PK y único. Tipo: <code>TINYINT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT</code></p></li>
+<li><p>descrip_ano: los años que comprende el año escolar, ej: 2019-2020. Solo puede contener números latinos y guión, expresión regular: &lsquo;<code>^[0-9]{4}-[0-9]{4}$</code>&rsquo;. Único. Tipo: <code>CHAR(9) UNIQUE NOT NULL</code></p></li>
+<li><p>status_gra: estado del grado: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Documento"></a>
+<h3>Documento</h3>
+
+<ul>
+<li><p>id_doc: ID del tipo de documento. PK. <code>TINYINT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT</code></p></li>
+<li><p>nombre_doc: nombre del tipo de documento. Solo puede contener letras y espacios, expresión regular: &lsquo;<code>^(?! )[\p{L} ]+(?&lt;! )$</code>&rsquo;. Único. Tipo: <code>VARCHAR(60) NOT NULL UNIQUE</code></p></li>
+<li><p>obligat_doc: si es obligatorio que el documento sea entregado o no. Solo puede tener lo valores TRUE (obligatorio) o FALSE (no obligatorio). Tipo: <code>BOOLEAN NOT NULL</code></p></li>
+<li><p>status_doc: estado del dato: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<table>
+<thead>
+<tr>
+<th>nom_doc</th>
+<th>obligatorio_doc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fotocopia de la C.I. del representante</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Informe descriptivo</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Constancia de promoción</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Cédula del alumno</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Fotocopia de la partida de nacimiento del alumno</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Control de vacunas del alumno</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Fotos del representante</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Otros</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>Nota: la constancia de promoción es obligatoria para primero y sexto grado, y se debe agregar una fotocopia de la cédula por cada representante que inscriba al alumno.</p>
+
+<a name="Enfermedad"></a>
+<h3>Enfermedad</h3>
+
+<ul>
+<li><p>id_enf: ID del tipo de enfermedad. PK. Tipo: <code>SMALLINT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT</code></p></li>
+<li><p>nombre_enf: nombre de la enfermedad. Solo se permiten letras, numeros y espacios, expresión regular: &lsquo;<code>^(?! )[\p{L}\d ]+(?&lt;! )$</code>&rsquo;. Único. Tipo: <code>VARCHAR(40) NOT NULL UNIQUE</code></p></li>
+<li><p>status_enf: estado del dato: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Escuela"></a>
+<h3>Escuela</h3>
+
+<ul>
+<li><p>id_esc: ID de la escuela de la que proviene el estudiante. PK. Tipo: <code>SMALLINT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT</code></p></li>
+<li><p>nombre_esc: nombre de la escuela de la que proviene el estudiante. Solo puede tener letras y espacios, expresión regular: &lsquo;<code>^(?! )[\p{L} ]+(?&lt;! )$</code>&rsquo;. Único. Tipo: <code>VARCHAR(100) NOT NULL UNIQUE</code></p></li>
+<li><p>status_esc: estado del dato: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Estado"></a>
+<h3>Estado</h3>
+
+<ul>
+<li><p>id_est: ID del estado de nacimiento del alumno. PK. Tipo: <code>TINYINT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT</code></p></li>
+<li><p>nombre_est: nombre del estado. Solo puede contener letras y espacios, expresión regular: &lsquo;<code>^(?! )[\p{L} ]+(?&lt;! )$</code>&rsquo;. Único. Tipo: <code>VARCHAR(25) NOT NULL UNIQUE</code></p></li>
+<li><p>status_est: estado del dato: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<p>Esta tabla debe contener por defecto:</p>
+
+<table>
+<thead>
+<tr>
+<th>nombre_est</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amazonas</td>
+</tr>
+<tr>
+<td>Anzoategui</td>
+</tr>
+<tr>
+<td>Apure</td>
+</tr>
+<tr>
+<td>Aragua</td>
+</tr>
+<tr>
+<td>Barinas</td>
+</tr>
+<tr>
+<td>Bolivar</td>
+</tr>
+<tr>
+<td>Carabobo</td>
+</tr>
+<tr>
+<td>Cojedes</td>
+</tr>
+<tr>
+<td>Delta Amacuro</td>
+</tr>
+<tr>
+<td>Distrito Capital</td>
+</tr>
+<tr>
+<td>Falcón</td>
+</tr>
+<tr>
+<td>Guárico</td>
+</tr>
+<tr>
+<td>La Guaira</td>
+</tr>
+<tr>
+<td>Lara</td>
+</tr>
+<tr>
+<td>Miranda</td>
+</tr>
+<tr>
+<td>Monagas</td>
+</tr>
+<tr>
+<td>Mérida</td>
+</tr>
+<tr>
+<td>Nueva Esparta</td>
+</tr>
+<tr>
+<td>Portuguesa</td>
+</tr>
+<tr>
+<td>Sucre</td>
+</tr>
+<tr>
+<td>Trujillo</td>
+</tr>
+<tr>
+<td>Táchira</td>
+</tr>
+<tr>
+<td>Yaracuy</td>
+</tr>
+<tr>
+<td>Zulia</td>
+</tr>
+<tr>
+<td>Extranjero</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="Grado"></a>
+<h3>Grado</h3>
+
+<ul>
+<li><p>id_gra: ID del grado. PK. Tipo: <code>TINYINT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT</code></p></li>
+<li><p>descrip_gra: grado del alumno. Solo puede contener números y letras latinas minúsculas, expresión regular: &ldquo;^[0-9]{1,2}[a-z]{2}$&rdquo; Tipo: <code>CHAR(4) NOT NULL</code></p></li>
+<li><p>status_gra: estado del grado: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Persona"></a>
+<h3>Persona</h3>
+
+<ul>
+<li><p>id_per: ID de la persona, es el número de cédula, Solo puede tener letras latinas mayúsculas y números, expresión regular: &lsquo;<code>^[0-9A-Z]+$</code>&rsquo;. Tipo: <code>CHAR(13) PRIMARY KEY NOT NULL</code></p></li>
+<li><p>apellido_per: apellidos de la persona. Solo puede tener letras y espacio, expresión regular: &lsquo;<code>^(?! )[\p{L} ]+(?&lt;! )$</code>&rsquo;. Tipo: <code>VARCHAR(60) NOT NULL</code></p></li>
+<li><p>nombre_per: nombres de la persona. Solo puede tener letras y espacio, expresión regular: &lsquo;<code>^(?! )[\p{L} ]+(?&lt;! )$</code>&rsquo;. Tipo: <code>VARCHAR(60) NOT NULL</code></p></li>
+<li><p>fecha_nac_per: fecha de nacimiento de la persona. Opcional. <code>DATE</code></p></li>
+<li><p>status_per: estado del dato: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Secci-c3--b3-n"></a>
+<h3>Sección</h3>
+
+<ul>
+<li><p>id_sec: ID de la sección. PK. Tipo: <code>TINYINT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT</code></p></li>
+<li><p>descrip_sec: descripción de la sección. Solo puede contener una letras mayúscula, expresión regular: &ldquo;^[A-Z]$&rdquo;. Único. Tipo: <code>CHAR NOT NULL</code></p></li>
+<li><p>status_sec: estado del grado: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Vacuna"></a>
+<h3>Vacuna</h3>
+
+<ul>
+<li><p>id_vac: ID del tipo de vacuna. PK. Solo puede tener letras mayúsculas, expresión regular: &lsquo;<code>^[A-Z]$</code>&rsquo;. PK. Tipo: <code>CHAR PRIMARY KEY NOT NULL AUTO_INCREMENT</code></p></li>
+<li><p>nombre_vac: nombre de la vacuna. Solo se permiten letras, numeros y espacios, expresión regular: &lsquo;<code>^(?! )[\p{L}\d ]+(?&lt;! )$</code>&rsquo;. Único. Tipo: <code>VARCHAR(25) NOT NULL UNIQUE</code></p></li>
+<li><p>status_vac: estado del dato: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<p>Esta tabla debe contener por defecto:</p>
+
+<table>
+<thead>
+<tr>
+<th>nom_vac</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Antiraviólica</td>
+</tr>
+<tr>
+<td>Antitetánica</td>
+</tr>
+<tr>
+<td>BCG</td>
+</tr>
+<tr>
+<td>Fiebre amarilla</td>
+</tr>
+<tr>
+<td>Hepatitis</td>
+</tr>
+<tr>
+<td>Meningitis</td>
+</tr>
+<tr>
+<td>Polio</td>
+</tr>
+<tr>
+<td>Sarampión</td>
+</tr>
+<tr>
+<td>Triple</td>
+</tr>
+<tr>
+<td>Trivalente</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="Transacciones"></a>
+<h3>Transacciones</h3>
+
+<a name="Doc_entregado"></a>
+<h3>Doc_entregado</h3>
+
+<ul>
+<li><p>id_per: ID del alumno. FK de Persona. Tipo: <code>CHAR(13) NOT NULL</code></p></li>
+<li><p>id_doc: ID del tipo de documento. FK de Documento. Tipo: <code>TINYINT UNSIGNED</code></p></li>
+<li><p>status_esc: estado del dato: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Enf_padecida"></a>
+<h3>Enf_padecida</h3>
+
+<ul>
+<li><p>id_per: ID de la persona. FK de Persona. Tipo: <code>CHAR(13) NOT NULL</code></p></li>
+<li><p>id_enf: ID del tipo de enfermedad. FK de Enfermedad. Tipo: <code>SMALLINT UNSIGNED NOT NULL</code></p></li>
+<li><p>status_enp: estado del dato: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Referencia"></a>
+<h3>Referencia</h3>
+
+<ul>
+<li><p>id_per: ID de la persona. FK de Persona. Tipo: <code>CHAR(13) NOT NULL</code></p></li>
+<li><p>direc_ref: dirección donde vive la persona. Opcional. Tipo: <code>VARCHAR(100)</code></p></li>
+<li><p>telef_ref: número de teléfono de la persona. Solo puede tener números latinos y símbolo &ldquo;+&rdquo;, expresión regular: &lsquo;<code>^(\+[0-9]{3})?[0-9]{12}$</code>&rsquo;. Opcional. Tipo: <code>CHAR(16)</code></p></li>
+<li><p>status_ref: estado del dato: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Representante"></a>
+<h3>Representante</h3>
+
+<ul>
+<li><p>id_per: ID de la persona. FK de Persona. Tipo: <code>CHAR(13) NOT NULL</code></p></li>
+<li><p>instruc_rep: nivel de instrucción. Solo puede contener los valores: Básica (B), Media (M), Superior (S); expresión regular: &lsquo;<code>^[BMS]$</code>&rsquo; Opcional. Tipo <code>CHAR NOT NULL</code></p></li>
+<li><p>ocupac_per: empleo de la persona. Tipo: <code>VARCHAR(30) NOT NULL</code></p></li>
+<li><p>status_rep: estado del dato: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Usuario"></a>
+<h3>Usuario</h3>
+
+<ul>
+<li><p>id_per: cédula de la persona e ID del usuario. Solo puede tener letras latinas minúsculas o números: &lsquo;<code>^[0-9a-z]+$</code>&rsquo;. FK de Persona y único. Tipo: <code>CHAR(13) UNIQUE NOT NULL</code></p></li>
+<li><p>clave_usu: contraseña de usuario hasheado con Bcrypt usando PHP. Tipo: <code>CHAR(60) NOT NULL</code></p></li>
+<li><p>rol_usu: rol del usuario, esto determina los permisos que tiene. Solo puede tener los valures &lsquo;A&rsquo; (administración), &rsquo;D' (Docente), &lsquo;R&rsquo; (Root), expresión regular: &lsquo;<code>^[ADR]$</code>&rsquo;. Tipo: <code>CHAR NOT NULL</code></p></li>
+<li><p>status_usu: estado de la cuenta de usuario: habilitada (TRUE) o deshabilitada (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<p>Esta tabla debe contener por defecto:</p>
+
+<table>
+<thead>
+<tr>
+<th>id_usu</th>
+<th>clave_usu</th>
+<th>rol_usu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>root</td>
+<td>m0lAresr3Moj4do5</td>
+<td>R</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="Vac_recibida"></a>
+<h3>Vac_recibida</h3>
+
+<ul>
+<li><p>id_per: ID de la persona. FK de Persona. Tipo: <code>CHAR(13) NOT NULL</code></p></li>
+<li><p>id_vac: ID del tipo de vacuna. FK de Vacuna. Tipo: <code>TINYINT UNSIGNED</code></p></li>
+<li><p>status_var: estado del dato: habilitado (TRUE) o deshabilitado (FALSE). Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Transacciones-de-la-inscripci-c3--b3-n"></a>
+<h2>Transacciones de la inscripción</h2>
+
+<a name="Alumno"></a>
+<h3>Alumno</h3>
+
+<ul>
+<li><p>id_per: número de cédula del alumno. FK de Persona y único. Tipo: <code>CHAR(13) NOT NULL UNIQUE</code></p></li>
+<li><p>lugar_nac_alu: ciudad en la que nació el alumno. Solo se permiten letras y espacios, expresión regular: &lsquo;<code>^(?! )[\p{L} ]+(?&lt;! )$</code>&rsquo;. Tipo: <code>VARCHAR(30) NOT NULL</code></p></li>
+<li><p>id_est: clave del tipo de estado. FK de Estado. Tipo: <code>TINYINT UNSIGNED NOT NULL</code></p></li>
+<li><p>sexo_alu: sexo del alumno. Solo puede tener los valores &rsquo;M' y &lsquo;F&rsquo;. Tipo: <code>CHAR NOT NULL</code></p></li>
+<li><p>id_esc: ID de la escuela de la que procede el alumno. FK de Escuela. Tipo: <code>SMALLINT UNSIGNED NOT NULL</code></p></li>
+<li><p>vive_alu: parentesco de la persona con la que vive. Expresión regualar: &lsquo;<code>^[A-K]$</code>&rsquo;. Tipo: <code>CHAR NOT NULL</code></p>
+
+<p>Valores posibles que puede contener:</p>
+
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Padre</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Madre</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Tío</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Tía</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Abuelo</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Abuela</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Hermano</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Hermana</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Primo</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Prima</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Otro</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>madre_alu: cédula de la madre. Tipo: <code>CHAR(13) NOT NULL</code></p></li>
+<li><p>padre_alu: cédula del padre. Tipo: <code>CHAR(13) NOT NULL</code></p></li>
+<li><p>constit_alu: constitución familar del alumno, cantidad de personas en su nucleo familiar. Tipo: <code>TINYINT UNSIGNED NOT NULL</code></p></li>
+<li><p>ingreso_alu: ingresos mensuales de la familia del alumno. Tipo: <code>DECIMAL(14,2) UNSIGNED NOT NULL</code></p></li>
+<li><p>vivienda_alu: tipo de casa en la que vive el alumno. Expresión regular: &lsquo;<code>^[ACDOQR]$</code>&rsquo;. Tipo: <code>CHAR NOT NULL</code></p>
+
+<p>Los valores que puede contener son:</p>
+
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>Casa</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Departamento</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>Quinta</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Rancho</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Anexo</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Otra</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>tenencia_alu: tipo de tenencia de vivienda en la que vive el alumno. Expresión regular: &lsquo;<code>^[AOPR]$</code>&rsquo; Tipo: <code>CHAR NOT NULL</code></p>
+
+<p>Los valores que puede contener son:</p>
+
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P</td>
+<td>Propia</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Alquilada</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Prestada</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Otra</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>observ_alu: observaciones del alumno. Puede tener cualquier caracter Unicode excepto caracteres de control, y barras invertidas expresión regular: &lsquo;<code>^(?! )(\P{Cc}|\R)+(?&lt;! )$</code>&rsquo;. Tipo: <code>VARCHAR(500) NOT NULL</code></p></li>
+<li><p>camisa_alu: talla de la camisa del alumno. Tipo: <code>TINYINT UNSIGNED NOT NULL</code></p></li>
+<li><p>pantalon_alu: talla del pantalón del alumno. Tipo: <code>TINYINT UNSIGNED NOT NULL</code></p></li>
+<li><p>zapatos_alu: talla de los zapatos del alumno. Tipo: <code>TINYINT UNSIGNED NOT NULL</code></p></li>
+<li><p>status_alu: estado de los datos del alumno. Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+
+
+<a name="Inscripcion"></a>
+<h3>Inscripcion</h3>
+
+<ul>
+<li><p>id_ins: ID de la planilla de inscripción. PK. Tipo: <code>INT PRIMARY KEY NOT NULL AUTO_INCREMENT</code></p></li>
+<li><p>id_ano: ID del año escolar. FK de Ano_escolar. Tipo: <code>TINYINT UNSIGNED NOT NULL</code></p></li>
+<li><p>id_gra: ID del grado del alumno. FK de Seccion. Tipo: <code>TINYINT UNSIGNED NOT NULL</code></p></li>
+<li><p>id_sec: ID de la sección del alumno. FK de Seccion. Tipo: <code>TINYINT UNSIGNED NOT NULL</code></p></li>
+<li><p>fecha_ins: fecha de la inscripción del alumno. Tipo: <code>DATE NOT NULL</code></p></li>
+<li><p>nota_ins: nota total con la que pasó el año. Solo puede tener letras mayúsculas, expresión regular: &lsquo;<code>^[A-F]$</code>&rsquo;. Tipo: <code>CHAR</code></p></li>
+<li><p>escolar_ins: escolaridad del alumno: regular (TRUE), repitiente (FALSE). Tipo: <code>BOOLEAN NOT NULL</code>.</p></li>
+<li><p>alumno_ins: ID del alumno. FK de Persona. Tipo: <code>CHAR(13) NOT NULL</code></p></li>
+<li><p>docente_ins: ID del docente que lo inscribió. FK de Persona. Tipo: <code>CHAR(13) NOT NULL</code></p></li>
+<li><p>represen_ins: ID del representante que lo inscribió. FK de Persona. Tipo: <code>CHAR(13) NOT NULL</code></p></li>
+<li><p>parent_ins: parentesco del alumno con respecto al representante. Expresión regular: &lsquo;<code>^[A-K]$</code>&rsquo;. Tipo: <code>CHAR NOT NULL</code></p>
+
+<p>Los valores que puede contener son:</p>
+
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Padre</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Madre</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Tío</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Tía</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Abuelo</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Abuela</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Hermano</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Hermana</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Primo</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Prima</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Otro</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>status_ins: estado de los datos de la inscripción. Tipo: <code>BOOLEAN DEFAULT TRUE</code></p></li>
+</ul>
+</body>
+</html>

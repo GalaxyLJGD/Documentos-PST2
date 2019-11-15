@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="65cm" height="35cm" viewBox="-276 -220 1288 686" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="422.35" y="100" width="210.8" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="422.35" y="100" width="210.8" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="527.75" y="114">Persona</text>
+    <rect style="fill: #ffffff" x="422.35" y="118" width="210.8" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="422.35" y="118" width="210.8" height="84"/>
+    <polygon style="fill: #000000" points="425.35,128 427.35,131 429.35,128 427.35,125 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="431.35" y="134">id_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="541.45" y="134">CHAR(13)</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="431.35" y1="135.6" x2="603.05" y2="135.6"/>
+    <ellipse style="fill: #000000" cx="427.35" cy="144" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="431.35" y="150">apellido_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="541.45" y="150">VARCHAR(60)</text>
+    <ellipse style="fill: #000000" cx="427.35" cy="160" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="431.35" y="166">nombre_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="541.45" y="166">VARCHAR(60)</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="427.35" cy="176" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="431.35" y="182">fecha_nac_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="541.45" y="182">DATE</text>
+    <ellipse style="fill: #000000" cx="427.35" cy="192" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="431.35" y="198">status_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="541.45" y="198">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="320" y="260" width="164.6" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="260" width="164.6" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="402.3" y="274">Usuario</text>
+    <rect style="fill: #ffffff" x="320" y="278" width="164.6" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="278" width="164.6" height="68"/>
+    <ellipse style="fill: #000000" cx="325" cy="288" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329" y="294">id_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="416" y="294">CHAR(13)</text>
+    <ellipse style="fill: #000000" cx="325" cy="304" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329" y="310">clave_usu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="416" y="310">CHAR(60)</text>
+    <ellipse style="fill: #000000" cx="325" cy="320" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329" y="326">rol_usu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="416" y="326">CHAR</text>
+    <ellipse style="fill: #000000" cx="325" cy="336" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329" y="342">status_usu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="416" y="342">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="560" y="260" width="195.4" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="560" y="260" width="195.4" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="657.7" y="274">Representante</text>
+    <rect style="fill: #ffffff" x="560" y="278" width="195.4" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="560" y="278" width="195.4" height="68"/>
+    <ellipse style="fill: #000000" cx="565" cy="288" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="569" y="294">id_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663.7" y="294">CHAR(13)</text>
+    <ellipse style="fill: #000000" cx="565" cy="304" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="569" y="310">instruc_rep</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663.7" y="310">CHAR</text>
+    <ellipse style="fill: #000000" cx="565" cy="320" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="569" y="326">ocupac_rep</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663.7" y="326">VARCHAR(30)</text>
+    <ellipse style="fill: #000000" cx="565" cy="336" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="569" y="342">status_rep</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663.7" y="342">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="430.05" y="380" width="195.4" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="430.05" y="380" width="195.4" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="527.75" y="394">Referencia</text>
+    <rect style="fill: #ffffff" x="430.05" y="398" width="195.4" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="430.05" y="398" width="195.4" height="68"/>
+    <ellipse style="fill: #000000" cx="435.05" cy="408" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="439.05" y="414">id_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="526.05" y="414">CHAR(13)</text>
+    <ellipse style="fill: #000000" cx="435.05" cy="424" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="439.05" y="430">direc_ref</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="526.05" y="430">VARCHAR(110)</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="435.05" cy="440" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="439.05" y="446">telef_ref</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="526.05" y="446">CHAR(16)</text>
+    <ellipse style="fill: #000000" cx="435.05" cy="456" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="439.05" y="462">status_ref</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="526.05" y="462">BOOLEAN</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="422.35,128 300,128 300,76 271.788,76 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="418.35" y="124">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="275.788" y="72">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-45.4,173 0.0938,173 0.0938,189 45.5876,189 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-41.4" y="169">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="41.5876" y="185">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-41.55,262 0.0938,262 0.0938,278 41.7376,278 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37.55" y="258">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="37.7376" y="274">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-41.55,68 2.0188,68 2.0188,92 45.5876,92 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37.55" y="64">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="41.5876" y="88">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="422.35,128 300,128 300,173 271.788,173 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="418.35" y="124">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="275.788" y="169">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="422.35,128 300,128 300,262 275.638,262 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="418.35" y="124">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="279.638" y="258">n</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="380" y="-220" width="295.5" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="380" y="-220" width="295.5" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="527.75" y="-206">Alumno</text>
+    <rect style="fill: #ffffff" x="380" y="-202" width="295.5" height="276"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="380" y="-202" width="295.5" height="276"/>
+    <ellipse style="fill: #000000" cx="385" cy="-192" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-186">id_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-186">CHAR(13)</text>
+    <ellipse style="fill: #000000" cx="385" cy="-176" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-170">lugar_nac_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-170">VARCHAR(30)</text>
+    <ellipse style="fill: #000000" cx="385" cy="-160" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-154">id_est</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-154">TINYINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="385" cy="-144" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-138">sexo_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-138">CHAR</text>
+    <ellipse style="fill: #000000" cx="385" cy="-128" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-122">id_esc</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-122">SMALLINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="385" cy="-112" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-106">vive_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-106">CHAR</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="385" cy="-96" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-90">madre_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-90">CHAR(13)</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="385" cy="-80" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-74">padre_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-74">CHAR(13)</text>
+    <ellipse style="fill: #000000" cx="385" cy="-64" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-58">constit_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-58">TINYINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="385" cy="-48" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-42">ingreso_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-42">DECIMAL(14,2) UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="385" cy="-32" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-26">vivienda_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-26">CHAR</text>
+    <ellipse style="fill: #000000" cx="385" cy="-16" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="-10">tenencia_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="-10">CHAR</text>
+    <ellipse style="fill: #000000" cx="385" cy="9.4369e-15" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="6">observ_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="6">VARCHAR(500)</text>
+    <ellipse style="fill: #000000" cx="385" cy="16" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="22">camisa_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="22">TINYINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="385" cy="32" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="38">pantalon_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="38">TINYINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="385" cy="48" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="54">zapato_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="54">TINYINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="385" cy="64" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389" y="70">status_alu</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="499.1" y="70">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="37.8876" y="-187.99" width="233.9" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="37.8876" y="-187.99" width="233.9" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="154.838" y="-173.99">Estado</text>
+    <rect style="fill: #ffffff" x="37.8876" y="-169.99" width="233.9" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="37.8876" y="-169.99" width="233.9" height="52"/>
+    <polygon style="fill: #000000" points="40.8876,-159.99 42.8876,-156.99 44.8876,-159.99 42.8876,-162.99 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="46.8876" y="-153.99">id_est</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="133.888" y="-153.99">TINYTINT UNSIGNED</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="46.8876" y1="-152.39" x2="264.788" y2="-152.39"/>
+    <ellipse style="fill: #000000" cx="42.8876" cy="-143.99" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="46.8876" y="-137.99">nombre_est</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="133.888" y="-137.99">VARCHAR(25)</text>
+    <ellipse style="fill: #000000" cx="42.8876" cy="-127.99" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="46.8876" y="-121.99">status_est</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="133.888" y="-121.99">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="37.8876" y="-100" width="233.9" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="37.8876" y="-100" width="233.9" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="154.838" y="-86">Escuela</text>
+    <rect style="fill: #ffffff" x="37.8876" y="-82" width="233.9" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="37.8876" y="-82" width="233.9" height="52"/>
+    <polygon style="fill: #000000" points="40.8876,-72 42.8876,-69 44.8876,-72 42.8876,-75 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="46.8876" y="-66">id_esc</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="133.888" y="-66">SMALLINT UNSIGNED</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="46.8876" y1="-64.4" x2="264.788" y2="-64.4"/>
+    <ellipse style="fill: #000000" cx="42.8876" cy="-56" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="46.8876" y="-50">nombre_esc</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="133.888" y="-50">VARCHAR(100)</text>
+    <ellipse style="fill: #000000" cx="42.8876" cy="-40" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="46.8876" y="-34">status_esc</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="133.888" y="-34">BOOLEAN</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="443.45,260 443.45,231 475.05,231 475.05,202 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="447.45" y="256">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="479.05" y="214">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="608.85,260 608.85,231 580.45,231 580.45,202 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="612.85" y="256">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="584.45" y="214">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="527.75,380 527.75,380 527.75,202 527.75,202 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="531.75" y="376">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="531.75" y="214">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="633.15,128 633.15,128 680,128 680,100 704,100 704,-96 675.5,-96 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="679.5" y="-100">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="633.15,128 633.15,128 680,128 680,100 704,100 704,-80 675.5,-80 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="679.5" y="-84">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="633.15,128 680,128 680,149.511 704,149.511 704,244 770.376,244 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="637.15" y="124">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="766.376" y="240">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="633.15,128 680,128 680,150 704,150 704,228 770.376,228 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="637.15" y="124">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="766.376" y="224">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="633.15,128 680,128 680,150 704,150 704,212 770.376,212 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="637.15" y="124">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="766.376" y="208">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="271.788,-159.99 325.894,-159.99 325.894,-160 380,-160 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="275.788" y="-163.99">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="376" y="-164">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="271.788,-72 325.894,-72 325.894,-128 380,-128 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="275.788" y="-76">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="376" y="-132">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="633.15,128 680,128 680,100 704,100 704,-192 675.5,-192 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="637.15" y="124">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="679.5" y="-196">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="774.226,16 750,16 750,116 770.376,116 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="770.226" y="12">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="766.376" y="112">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="774.226,-68 740,-68 740,132 770.376,132 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="770.226" y="-72">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="766.376" y="128">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="774.226,-152 730,-152 730,148 770.376,148 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="770.226" y="-156">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="766.376" y="144">n</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="770.376" y="72" width="241.6" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="770.376" y="72" width="241.6" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="891.176" y="86">Inscripcion</text>
+    <rect style="fill: #ffffff" x="770.376" y="90" width="241.6" height="196"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="770.376" y="90" width="241.6" height="196"/>
+    <polygon style="fill: #000000" points="773.376,100 775.376,103 777.376,100 775.376,97 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="106">id_ins</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="106">INT UNSIGNED</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="779.376" y1="107.6" x2="974.176" y2="107.6"/>
+    <ellipse style="fill: #000000" cx="775.376" cy="116" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="122">id_ano</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="122">TINYINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="775.376" cy="132" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="138">id_gra</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="138">TINYINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="775.376" cy="148" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="154">id_sec</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="154">TINYINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="775.376" cy="164" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="170">fecha_ins</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="170">DATE</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="775.376" cy="180" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="186">nota_ins</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="186">CHAR</text>
+    <ellipse style="fill: #000000" cx="775.376" cy="196" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="202">escolar_ins</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="202">BOOLEAN</text>
+    <ellipse style="fill: #000000" cx="775.376" cy="212" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="218">alumno_ins</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="218">CHAR(13)</text>
+    <ellipse style="fill: #000000" cx="775.376" cy="228" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="234">docente_ins</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="234">CHAR(13)</text>
+    <ellipse style="fill: #000000" cx="775.376" cy="244" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="250">represen_ins</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="250">CHAR(13)</text>
+    <ellipse style="fill: #000000" cx="775.376" cy="260" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="266">parent_ins</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="266">CHAR</text>
+    <ellipse style="fill: #000000" cx="775.376" cy="276" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.376" y="282">status_ins</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.776" y="282">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="774.226" y="-12" width="233.9" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="774.226" y="-12" width="233.9" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="891.176" y="2">Ano_escolar</text>
+    <rect style="fill: #ffffff" x="774.226" y="6" width="233.9" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="774.226" y="6" width="233.9" height="52"/>
+    <polygon style="fill: #000000" points="777.226,16 779.226,19 781.226,16 779.226,13 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="783.226" y="22">id_ano</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="877.926" y="22">TINYINT UNSIGNED</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="783.226" y1="23.6" x2="1001.13" y2="23.6"/>
+    <ellipse style="fill: #000000" cx="779.226" cy="32" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="783.226" y="38">descrip_ano</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="877.926" y="38">CHAR(9)</text>
+    <ellipse style="fill: #000000" cx="779.226" cy="48" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="783.226" y="54">status_ano</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="877.926" y="54">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="774.226" y="-96" width="233.9" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="774.226" y="-96" width="233.9" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="891.176" y="-82">Grado</text>
+    <rect style="fill: #ffffff" x="774.226" y="-78" width="233.9" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="774.226" y="-78" width="233.9" height="52"/>
+    <polygon style="fill: #000000" points="777.226,-68 779.226,-65 781.226,-68 779.226,-71 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="783.226" y="-62">id_gra</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="877.926" y="-62">TINYINT UNSIGNED</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="783.226" y1="-60.4" x2="1001.13" y2="-60.4"/>
+    <ellipse style="fill: #000000" cx="779.226" cy="-52" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="783.226" y="-46">descrip_gra</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="877.926" y="-46">CHAR(4)</text>
+    <ellipse style="fill: #000000" cx="779.226" cy="-36" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="783.226" y="-30">status_gra</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="877.926" y="-30">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="774.226" y="-180" width="233.9" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="774.226" y="-180" width="233.9" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="891.176" y="-166">Seccion</text>
+    <rect style="fill: #ffffff" x="774.226" y="-162" width="233.9" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="774.226" y="-162" width="233.9" height="52"/>
+    <polygon style="fill: #000000" points="777.226,-152 779.226,-149 781.226,-152 779.226,-155 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="783.226" y="-146">id_sec</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="877.926" y="-146">TINYINT UNSIGNED</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="783.226" y1="-144.4" x2="1001.13" y2="-144.4"/>
+    <ellipse style="fill: #000000" cx="779.226" cy="-136" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="783.226" y="-130">descrip_sec</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="877.926" y="-130">CHAR</text>
+    <ellipse style="fill: #000000" cx="779.226" cy="-120" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="783.226" y="-114">status_sec</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="877.926" y="-114">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="41.7376" y="234" width="233.9" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="41.7376" y="234" width="233.9" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="158.688" y="248">Enf_padecida</text>
+    <rect style="fill: #ffffff" x="41.7376" y="252" width="233.9" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="41.7376" y="252" width="233.9" height="52"/>
+    <ellipse style="fill: #000000" cx="46.7376" cy="262" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="50.7376" y="268">id_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="137.738" y="268">CHAR(13)</text>
+    <ellipse style="fill: #000000" cx="46.7376" cy="278" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="50.7376" y="284">id_enf</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="137.738" y="284">SMALLINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="46.7376" cy="294" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="50.7376" y="300">status_enp</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="137.738" y="300">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-275.45" y="234" width="233.9" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-275.45" y="234" width="233.9" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-158.5" y="248">Enfermedad</text>
+    <rect style="fill: #ffffff" x="-275.45" y="252" width="233.9" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-275.45" y="252" width="233.9" height="52"/>
+    <polygon style="fill: #000000" points="-272.45,262 -270.45,265 -268.45,262 -270.45,259 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-266.45" y="268">id_enf</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-179.45" y="268">SMALLINT UNSIGNED</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-266.45" y1="269.6" x2="-48.55" y2="269.6"/>
+    <ellipse style="fill: #000000" cx="-270.45" cy="278" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-266.45" y="284">nombre_enf</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-179.45" y="284">VARCHAR(40)</text>
+    <ellipse style="fill: #000000" cx="-270.45" cy="294" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-266.45" y="300">status_enf</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-179.45" y="300">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="45.5876" y="145" width="226.2" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="45.5876" y="145" width="226.2" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="158.688" y="159">Vac_recibida</text>
+    <rect style="fill: #ffffff" x="45.5876" y="163" width="226.2" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="45.5876" y="163" width="226.2" height="52"/>
+    <ellipse style="fill: #000000" cx="50.5876" cy="173" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="54.5876" y="179">id_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="141.588" y="179">CHAR(13)</text>
+    <ellipse style="fill: #000000" cx="50.5876" cy="189" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="54.5876" y="195">id_vac</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="141.588" y="195">TINYINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="50.5876" cy="205" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="54.5876" y="211">status_var</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="141.588" y="211">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-271.6" y="145" width="226.2" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-271.6" y="145" width="226.2" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-158.5" y="159">Vacuna</text>
+    <rect style="fill: #ffffff" x="-271.6" y="163" width="226.2" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-271.6" y="163" width="226.2" height="52"/>
+    <polygon style="fill: #000000" points="-268.6,173 -266.6,176 -264.6,173 -266.6,170 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-262.6" y="179">id_vac</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-175.6" y="179">TINYINT UNSIGNED</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-262.6" y1="180.6" x2="-52.4" y2="180.6"/>
+    <ellipse style="fill: #000000" cx="-266.6" cy="189" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-262.6" y="195">nombre_vac</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-175.6" y="195">VARCHAR(40)</text>
+    <ellipse style="fill: #000000" cx="-266.6" cy="205" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-262.6" y="211">status_vac</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-175.6" y="211">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="45.5876" y="48" width="226.2" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="45.5876" y="48" width="226.2" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="158.688" y="62">Doc_entregado</text>
+    <rect style="fill: #ffffff" x="45.5876" y="66" width="226.2" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="45.5876" y="66" width="226.2" height="52"/>
+    <ellipse style="fill: #000000" cx="50.5876" cy="76" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="54.5876" y="82">id_per</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="141.588" y="82">CHAR(13)</text>
+    <ellipse style="fill: #000000" cx="50.5876" cy="92" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="54.5876" y="98">id_doc</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="141.588" y="98">TINYINT UNSIGNED</text>
+    <ellipse style="fill: #000000" cx="50.5876" cy="108" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="54.5876" y="114">status_doe</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="141.588" y="114">BOOLEAN</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-275.45" y="40" width="233.9" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-275.45" y="40" width="233.9" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-158.5" y="54">Documento</text>
+    <rect style="fill: #ffffff" x="-275.45" y="58" width="233.9" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-275.45" y="58" width="233.9" height="68"/>
+    <polygon style="fill: #000000" points="-272.45,68 -270.45,71 -268.45,68 -270.45,65 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-266.45" y="74">id_doc</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-171.75" y="74">TINYINT UNSIGNED</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-266.45" y1="75.6" x2="-48.55" y2="75.6"/>
+    <ellipse style="fill: #000000" cx="-270.45" cy="84" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-266.45" y="90">descrip_doc</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-171.75" y="90">VARCHAR(60)</text>
+    <ellipse style="fill: #000000" cx="-270.45" cy="100" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-266.45" y="106">obligat_doc</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-171.75" y="106">BOOLEAN</text>
+    <ellipse style="fill: #000000" cx="-270.45" cy="116" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-266.45" y="122">status_doc</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-171.75" y="122">BOOLEAN</text>
+  </g>
+</svg>
