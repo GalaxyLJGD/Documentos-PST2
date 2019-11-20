@@ -41,10 +41,12 @@ CREATE TABLE IF NOT EXISTS db_villas.Grado
 CREATE TABLE IF NOT EXISTS db_villas.Persona
 (
     id_per CHAR(13) PRIMARY KEY NOT NULL,
+    tipo_ced_per CHAR NOT NULL,
     nombre_per VARCHAR(60) NOT NULL,
     apellido_per VARCHAR(60) NOT NULL,
     fecha_nac_per DATE,
-    status_per BOOLEAN DEFAULT TRUE
+    status_per BOOLEAN DEFAULT TRUE,
+    CONSTRAINT CHK_tipo_ced CHECK (tipo_ced_per REGEXP '^[EPV]$')
 ) ENGINE = INNODB;
 CREATE TABLE IF NOT EXISTS db_villas.Seccion
 (
@@ -143,7 +145,7 @@ CREATE TABLE IF NOT EXISTS db_villas.Alumno
 ) ENGINE = INNODB;
 CREATE TABLE IF NOT EXISTS db_villas.Inscripcion
 (
-    id_ins INT UNSIGNED PRIMARY NOT NULL AUTO_INCREMENT,
+    id_ins INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_ano TINYINT UNSIGNED NOT NULL,
     id_gra TINYINT UNSIGNED NOT NULL,
     id_sec TINYINT UNSIGNED NOT NULL,
@@ -189,7 +191,7 @@ INSERT INTO db_villas.Vacuna(nombre_vac) VALUES
     ('Trivalente');
 
 -- Administrador del sistema
-INSERT INTO db_villas.Persona(id_per, nombre_per, apellido_per) VALUES
-    ('root', 'Administrador', 'del Sistema');
+INSERT INTO db_villas.Persona(id_per, tipo_ced_per, nombre_per, apellido_per) VALUES
+    ('root', 'V', 'Administrador', 'del Sistema');
 INSERT INTO db_villas.Usuario(id_per, rol_usu, clave_usu) VALUES
     ('root', 'R', 'm0lAresr3Moj4do5');
